@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageMain.master.cs" Inherits="Albuns.MasterPageMain" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Styles/StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+  <h1 class="header_logo"><img class="auto-style2" src="Styles/images/LP_Vinyl_Symbol_Icon.png" />CDs</h1>
+</div>
+<div class="offset">
+</div>
+
+        <main><div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <link href="StyleSheet1.css" rel="stylesheet" />
+            </asp:ContentPlaceHolder>
+        </div>
+
+        </main>
+        <footer>
+            <h3> Teste de estágio </h3>
+        </footer>
+        
+    </form>
+</body>
+</html>
